@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Love between Us</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<style>
+    *{margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline}
+
+    .home {
+        width: 100%;
+        height: 100%;
+        background-color: #0a0a1e;
+        overflow: hidden
+    }
+    .home canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: #0a0a1e
+    }
+
+</style>
+<body class="home">
+    <audio src="./zmql.mp3" autoplay="true" loop="loop"></audio>
+    <div id="back">
+        <div class="mask"></div>
+        <!-- 设置展示的图片，github pages不能有后台程序只能一条一条手动添加了 囧 -->
+        <div id="carousel"  class="carousel slide carousel-fade carousel-position">
+            <div class="carousel-inner" style="width: 100%;height: 100%;" id="background">
+                <div class="item active" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/21.jpeg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%;">
+                    <div style="width: 60%;height: 100%;background: url(./img/233.jpg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/234.jpg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/4.jpeg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/2.jpeg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/14.jpeg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/18.jpeg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/25.jpg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/26.jpg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/32.jpg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/30.jpg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/17.jpeg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/13.jpeg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/7.jpeg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/27.jpg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/16.jpeg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/3.jpeg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/20.jpg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/22.jpg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/8.jpeg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/1.jpeg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/9.jpeg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/6.jpeg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/24.jpg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/29.jpg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/31.jpg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/35.jpg) no-repeat;"></div>
+                </div>
+                <div class="item" style="width: 100%;height: 90%;margin-top: 2%;margin-left: 3%">
+                    <div style="width: 100%;height: 100%;background: url(./img/10.jpeg) no-repeat;"></div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="modal show" style="top:24%;margin-left: 60%;margin-top: -12%;">
+        <div class="modal-dialog" style="opacity: .9">
+            <div class="modal-content" style="opacity:.85">
+                <div class="modal-header">
+                    <h1 class="text-center" style="color:#FF3366;font-family: 'JournalRegular', Arial, sans-serif;font-size: 8rem;">we will be together forever</h1>
+                    <p class="text-center small-title" style="padding-top: 20px;font-size: 15px;color: #e3e3e3">Liulang & Chenzaihui</p>
+                    <p class="text-center small-title" style="padding-top: 20px;font-size: 15px;color: #e3e3e3">LOVING ON THE WAY</p>
+                </div>
+                <div class="modal-body text-center" style="line-height: 1.5rem;font-family: 'JournalRegular', Arial, sans-serif;font-size: 3rem;">
+                    <p>
+                        <span id="day" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="hour" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="minute" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="second" class="time-font"></span>
+                    </p>
+                    <p style="color: #9d9d9d">
+                        days/hours/min/sec
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top:40%;margin-left: 25%" ><p  class="text-center" style="color: #FF3366 ;font-size: 28px;padding-top: 20px;" id="say"></p></div>
+    <script type="text/javascript" src="./js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/count-time.js"></script>
+    <script src="js/pixi.js" type="text/javascript"></script>
+    <script src="js/quicksketch.min.js" type="text/javascript"></script>
+    <script src="js/introBG.js" type="text/javascript"></script>
+    <canvas width="100%" height="100%"></canvas>
+    <script>
+    $(function() {
+        //设置起始日期
+        countTime('2018/01/22 04:26', 'day', 'hour', 'minute', 'second');
+        var days = $('#day').text();
+
+        // 设置标题
+        if (parseInt(days / 365) != 0) {
+            $(document).attr("title", "在一起" + parseInt(days / 365) + "年,感谢相伴。");
+        } else if (parseInt(days / 30) != 0) {
+            $(document).attr("title", "在一起" + parseInt(days / 30) + "个月,感谢相伴。");
+        } else
+            $(document).attr("title", "在一起" + days + "天,感谢相伴。");
+
+        //设置每一张图片对应的文字
+        var says = new Array(
+            "2018年1月22日，我们在一起了",
+            "很高兴遇见你",
+            "我们去重庆了,这是我们第一次旅行",
+            "第一站，洪崖洞",
+            "漂亮的滨江路",
+            "哈哈，腿长",
+            "美腻的你",
+            "害羞的你",
+            "爱吃的你",
+            "无论哪种的你我都喜欢",
+            "洪崖洞的小礼品店我们的姓都是挨在一起的",
+            "我们也会一直在一起",
+            "解放碑的我们",
+            "啊喽哈，解放碑的人很多啊",
+            "哇，女神啊",
+            "执子之手",
+            "与子偕老",
+            "川美的涂鸦，我被你嘲笑不懂艺术",
+            "涂鸦和你，很搭哦",
+            "我们在瓷器口",
+            "你很喜欢古镇",
+            "别有一番风味",
+            "我们在磁器口的留言，希望下次去还在哦",
+            "我们赶上了最后一场雪",
+            "你笑的多开心，像个200斤的胖纸，哈哈",
+            "美美的",
+            "这是你给我做的第一顿饭，很感动",
+            "你说这张照片很好看",
+        );
+
+
+        var start = function() {
+            var index = 0;
+            var rate = 6000;
+            $('#say').text(says[(index++) % says.length]);
+         	var _play = function () {
+         		$('#say').hide();
+                $('#say').text(says[(index++) % says.length]);
+                $('#say').fadeToggle();
+                $('#carousel').carousel('next');
+         	};
+            setInterval(_play, rate);
+        }();
+
+    });
+    </script>
+</body>
+
+</html>
